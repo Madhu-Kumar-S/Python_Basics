@@ -7,6 +7,6 @@ print(sorted(d['a'] + d['b'] + d['c']))
 
 # using list comprehension
 
-res = (sorted(e for i in d.values() for e in i))
+res = sorted(j for i in d.values() for j in i)
 
 print(res)
