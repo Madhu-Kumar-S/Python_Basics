@@ -15,6 +15,7 @@ d = dict(d)
 l = [k for k,v in d.items() if v==m]
 
 print("'{}' is the K’th Non-repeating Character".format(l[-1]))
+
 print("............................................................")
 print("another way")
 dt = dict(Counter(s))
