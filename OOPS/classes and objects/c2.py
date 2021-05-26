@@ -20,6 +20,7 @@ print("s1 = ", s1.x)
 print("s2 = ", s2.x)
 
 print("..................................")
+
 # python program on class / static variable
 
 class Sample2:
