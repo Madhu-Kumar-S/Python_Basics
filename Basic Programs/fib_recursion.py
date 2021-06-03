@@ -1,7 +1,7 @@
 # Python Program for n-th Fibonacci number using Recursion & memoization
 from functools import lru_cache #least recently used cache
 
-@lru_cache(maxsize=1000)
+@lru_cache(maxsize=1000)  # memoization concept
 def fibonacci(n):
 
     if n == 1:

@@ -13,8 +13,8 @@ class Computer:
         print("CPU = ", self.cpu)
         print("RAM = ", self.ram)
 
-    def compare(self, c2):  # self = c1 and c2 = c2
-        if self.ram == c2.ram: return "both rams are same"
+    def compare(self, other):  # self = c1 and c2 = c2
+        if self.ram == other.ram: return "both rams are same"
         else: return "both rams are different"
 
 # creating (instance)object to class / intantiating
@@ -27,7 +27,7 @@ Computer.config(c2)
 
 print("comparision of RAM")
 print(c1.ram == c2.ram)  # using == operator
-print(c1.compare(c2))  # using pre-defined function
+print(c1.compare(c2))  # using user-defined function
 
 
 
