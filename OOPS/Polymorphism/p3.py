@@ -12,7 +12,7 @@ class BookY(object):
 
 b1 = BookX(100)
 b2 = BookY(200)
-print("Total pages =", b1 + b2)
+print("Total pages =", b1 + b2)  # b1+b2 --> BookX.__add__(b1,b2)
 #  print("Total pages =", b1 + b2) -->gives error without creating an __add__() inbuilt method inside the class
 
 a = 2

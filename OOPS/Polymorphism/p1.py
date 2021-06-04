@@ -1,4 +1,4 @@
-# Duck typing philosphy in python
+# Duck typing philosophy in python
 
 class Duck(object):
 
