@@ -2,9 +2,8 @@
 from math import *
 
 def armstrong(no):
-    l = []
-    for i in no:
-        l.append(int(i))
+    l = list(no)
+    l = [int(i) for i in l]
     o = len(l)
     n = 0
     for i in l:
