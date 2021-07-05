@@ -1,23 +1,46 @@
-print("Hello World!")
+class Teacher(object):
 
-# Python Program to check Armstrong Number
-from math import *
+    def __init__(self, id, name, address):
+        self.id = id
+        self.name = name
+        self.address = address
 
-def armstrong(no):
-    l = list(no)
-    l = [int(i) for i in l]
-    o = len(l)
-    n = 0
-    for i in l:
-        n = n + pow(i, o)
+    def display(self):
+        print("Id  =", self.id)
+        print("Name =", self.name)
+        print("Address =",self.address)
 
-    return int(n)
+    def get_salary(self, salary=0.0):
+        print("Salary =", salary)
 
-no = input("enter a number:")
+class Student(Teacher):
+    def __init__(self, id, name, address):
+        super().__init__(id, name, address)
 
-result = armstrong(no)
+    def display(self):
+        super().display()
 
-if result == int(no):
-    print("{} is armstrong number".format(result))
-else:
-    print(("{} is not armstrong number".format(int(no))))
+    def get_marks(self, marks=0.0):
+        print("Marks =", marks)
+
+id1 = int(input("enter teacher\'s id:"))
+name1 = input("enter teacher\'s name:")
+address1 = input("enter teacher\'s address:")
+salary = float(input("enter teacher\'s salary:"))
+print()
+print("Teacher Details:")
+t =Teacher(id1, name1, address1)
+t.display()
+t.get_salary(salary)
+
+print("......................................")
+
+id2 = int(input("enter student\'s id:"))
+name2 = input("enter student\'s name:")
+address2 = input("enter student\'s address:")
+marks = float(input("enter student\'s marks:"))
+print()
+print("Students Details:")
+s = Student(id2, name2, address2)
+print(s.display())
+s.get_marks(marks)

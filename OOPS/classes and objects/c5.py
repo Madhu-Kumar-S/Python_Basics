@@ -6,7 +6,7 @@ class Bird:
 
     @classmethod
     def fly(cls, name):  # class method
-        print('{:s} flies with {:d} wings.'.format(name, cls.wings))
+        print('{:s} fly\'s with {:d} wings.'.format(name, cls.wings))
 
 Bird.fly("peacock")  # calling class method
 Bird.fly("Sparrow")

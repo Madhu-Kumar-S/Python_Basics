@@ -13,7 +13,7 @@ class Computer:
         print("CPU = ", self.cpu)
         print("RAM = ", self.ram)
 
-    def compare(self, other):  # self = c1 and c2 = c2
+    def compare(self, other):  # self = c1 and other = c2
         if self.ram == other.ram: return "both rams are same"
         else: return "both rams are different"
 

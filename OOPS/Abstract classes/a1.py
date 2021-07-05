@@ -1,4 +1,4 @@
-# pgm to create abstract class and sub classes which implement the abstract method of the abstarct class
+# pgm to create abstract class and sub classes which implement the abstract method of the abstract class
 import math
 from abc import ABC, abstractmethod
 import math
