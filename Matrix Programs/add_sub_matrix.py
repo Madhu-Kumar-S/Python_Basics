@@ -2,7 +2,7 @@
 
 from numpy import*
 
-r1, c1 = [int(x) for x in input(("enter no of rows and columns:")).split()]
+r1, c1 = [int(x) for x in input("enter no of rows and columns of 1st matrix:").split()]
 
 str1 = input("enter matrix elements:\n")
 
@@ -10,7 +10,7 @@ a = reshape(matrix(str1), (r1, c1))
 
 print(a)
 
-r2, c2 = [int(x) for x in input(("enter no of rows and columns:")).split()]
+r2, c2 = [int(x) for x in input("enter no of rows and columns of 2nd matrix:").split()]
 
 str2 = input("enter matrix elements:\n")
 
@@ -20,15 +20,15 @@ print(b)
 print()
 
 if (r1 == r2) and (c1 == c2):
-    print("addition of two matrices using operator")
+    print("addition of two matrices using operator:")
     c = a + b
     print(c)
-    print("subtraction of two matrices using operator")
+    print("subtraction of two matrices using operator:")
     d = a - b
     print(d)
-    print("addition of two matrices using ")
+    print("addition of two matrices using add() method:")
     print(add(a, b))
-    print("subtraction of two matrices")
+    print("subtraction of two matrices using subtract() method:")
     print(subtract(a, b))
 else:
     print("rows and coloumns of both the arrays should be equal for adding two matrices")
